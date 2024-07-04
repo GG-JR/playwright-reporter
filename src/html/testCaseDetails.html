@@ -1,0 +1,111 @@
+<div
+			class="modal fade"
+			id="{{.ModalID}}"
+			tabindex="-1"
+			aria-labelledby="{{.ModalID}}Label"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header result-header">
+
+						<div class="header-col-left">
+							<span class="modal-title fs-5" id="{{.ModalID}}Label">
+								<label class="text-capitalize {{.ModalHeaderClassesCss}}">{{.ModalHeaderStatus}}</label>
+							</h1>
+						</div>
+						<div class="header-col-center">
+							{{.Title}}
+						</div>
+						<div class="header-col-right">
+							<span
+								type="button"
+								class="close-btn"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+								onclick="showHideScroll('show')"
+								>X</span>
+						</div>						
+						
+					</div>
+					<div class="modal-header result-tab-header">
+						<div class="tab">
+							<button class="result-tablinks-{{.ModalID}} active" onclick="openResultTab(event, 'TabRunInfo-{{.ModalID}}', '{{.ModalID}}')">
+								Run Info
+							</button>
+							<button class="result-tablinks-{{.ModalID}}" onclick="openResultTab(event, 'TabSteps-{{.ModalID}}', '{{.ModalID}}')">
+								Steps
+							</button>
+							{{.ErrorsTabButton}}
+							{{.ScreenshotsTabButton}}
+							{{.VideosTabButton}}
+							{{.TraceTabButton}}
+							{{.StdoutTabButton}} 
+							{{.StderrTabButton}}
+						</div>
+					</div>
+					<div class="modal-body odhin-bg-steps-color">
+						<div id="TabRunInfo-{{.ModalID}}" style="display: block" class="result-tabcontent result-tabcontent-{{.ModalID}}">
+							<div class="container-fluid">
+								<div class="row m-0 p-0">
+									<div class="col m-0 p-0">
+										<div class="table-responsive">
+											<table
+												class="table table-sm mb-0 testcase-run-info-table"
+											>
+												<tr>
+													<th class="odhin-text">Filename</th>
+													<td
+														class="text-secondary-emphasis fst-italic"
+													>
+														{{.InfoFilename}}
+													</td>
+												</tr>
+												<tr>
+													<th class="odhin-text fst-italic">Browser</th>
+													<td
+														class="text-secondary-emphasis fst-italic"
+													>
+														{{.InfoBrowser}}
+													</td>
+												</tr>
+												<tr>
+													<th class="odhin-text">
+														Execution Start Time
+													</th>
+													<td
+														class="text-secondary-emphasis fst-italic"
+													>
+														{{.InfoStartTime}}
+													</td>
+												</tr>
+												<tr>
+													<th class="odhin-text">
+														Total Execution Time
+													</th>
+													<td
+														class="text-secondary-emphasis fst-italic"
+													>
+														{{.InfoTotalExecutionTime}}
+													</td>
+												</tr>
+												{{.InfoRetry}}
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="TabSteps-{{.ModalID}}" style="display: none" class="result-tabcontent result-tabcontent-{{.ModalID}}">
+							{{.Steps}}
+						</div>
+						{{.Errors}}
+						{{.Screenshots}}
+						{{.Videos}}
+						{{.Trace}}
+						{{.Stdout}} 
+						{{.Stderr}}
+					</div>
+				</div>
+			</div>
+		</div>

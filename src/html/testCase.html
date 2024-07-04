@@ -1,0 +1,12 @@
+<tr class="test-row-result row-{{.TRClassesCss}} {{.TRClassesCss}}"
+data-bs-toggle="modal"
+data-bs-target="#{{.ModalID}}"
+onclick="showHideScroll('hide')"
+>
+	<td class="{{.TDClassesCss}}">{{.Title}}</td>
+	<td class="text-capitalize {{.TDClassesCss}}">{{.Status}}</td>
+	<td class="{{.TDClassesCss}}">{{.File}}</td>
+	<td class="{{.TDClassesCss}}">{{.Browser}}</td>
+	<td class="{{.TDClassesCss}}">{{.Duration}}</td>
+	{{.Retry}}
+</tr>

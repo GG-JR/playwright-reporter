@@ -1,0 +1,38 @@
+stages:
+  - setup
+  - publish
+  - deploy
+
+print-info:
+  stage: setup
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+  script:
+    - 'echo "Job start: $CI_JOB_STARTED_AT"'
+    - 'echo "Branch: $CI_COMMIT_BRANCH"'
+    - 'echo "Commit Author: $CI_COMMIT_AUTHOR"'
+
+npm:
+  image: node:latest
+  stage: publish
+  only:
+    - main
+  script:
+    - npm cache clean --force
+    - npm install -g typescript
+    - npm install
+    - npm run build
+    - cp src/server.mjs lib/server.mjs
+    - cp -r src/html lib/html
+    - npm config set //registry.npmjs.org/:_authToken ${PLAYWRIGHT_HTML_PIPELINE_TOKEN}
+    - npm publish
+
+pages:
+  stage: deploy
+  only:
+    - main
+  script:
+    - cp -r docs/. public
+  artifacts:
+    paths:
+    - public

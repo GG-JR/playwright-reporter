@@ -1,0 +1,47 @@
+<div class="mt-3 mb-3 odhin-thin-border dashboard-block">
+	<div class="info-box-header">Run info</div>
+	<div class="odhin-table">
+		<div class="container-fluid">
+			<div class="row m-0 p-0">
+				<div class="col m-0 p-0">
+					<div class="table-responsive text-start">
+						<table
+							class="table table-sm mb-0 testcase-run-info-table"
+						>
+							<tr>
+								<th class="odhin-text">Project</th>
+								<td class="text-secondary-emphasis fst-italic">{{.Project}}</td>
+							</tr>
+							<tr>
+								<th class="odhin-text fst-italic">Release</th>
+								<td class="text-secondary-emphasis fst-italic">{{.Release}}</td>
+							</tr>
+							<tr>
+								<th class="odhin-text fst-italic">Test Environment</th>
+								<td class="text-secondary-emphasis fst-italic">
+									{{.TestEnvironment}}
+								</td>
+							</tr>
+							<tr>
+								<th class="odhin-text">Execution Start Time</th>
+								<td class="text-secondary-emphasis fst-italic">
+									{{.StartTime}}
+								</td>
+							</tr>
+							<tr>
+								<th class="odhin-text">Execution End Time</th>
+								<td class="text-secondary-emphasis fst-italic">{{.EndTime}}</td>
+							</tr>
+							<tr>
+								<th class="odhin-text">Total Execution Time</th>
+								<td class="text-secondary-emphasis fst-italic">
+									{{.TotalExecutionTime}}
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

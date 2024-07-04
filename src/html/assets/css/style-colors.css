@@ -1,0 +1,337 @@
+* {
+	scrollbar-color: var(--odhin-color-scrollbar-thumb);
+	scrollbar-face-color: var(--odhin-color-scrollbar-thumb);
+	scrollbar-shadow-color: var(--odhin-color-scrollbar-track);
+	scrollbar-highlight-color: var(--odhin-color-scrollbar-track);
+	scrollbar-3dlight-color: var(--odhin-color-scrollbar-track);
+	scrollbar-darkshadow-color: var(--odhin-color-scrollbar-track);
+	scrollbar-track-color: var(--odhin-color-scrollbar-track);
+	scrollbar-arrow-color: var(--odhin-color-scrollbar-track);
+}
+
+body,
+html {
+	background-color: var(--odhin-color-background-2);
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--odhin-color-scrollbar-track);
+}
+*::-webkit-scrollbar-thumb {
+	background: var(--odhin-color-scrollbar-thumb);
+	border: 1px solid var(--odhin-color-scrollbar-thumb);
+}
+::-moz-selection {
+	color: var(--odhin-color-selection-font);
+	background: var(--odhin-color-selection-background);
+}
+::selection {
+	color: var(--odhin-color-selection-font);
+	background: var(--odhin-color-selection-background);
+}
+
+
+
+.odhin-bg {
+	background-color: var(--odhin-color-background-1);
+}
+.odhin-bg-steps-color{
+	background-color: var(--odhin-color-background-2);
+}
+.odhin-text {
+	color: var(--odhin-color-font-2);
+}
+.text-secondary-emphasis{
+	color: var(--odhin-color-font-2) !important;
+}
+.odhin-footer{
+	background-color: var(--odhin-color-background-1);
+}
+.odhin-border {
+	border: 2px solid var(--odhin-color-others-borders);
+}
+.odhin-thin-border {
+	border: 1px solid var(--odhin-color-others-borders);
+}
+.odhin-thin-border-bottom {
+	border-bottom: 1px solid var(--odhin-color-others-borders);
+}
+
+
+.odhin-attachments-label{
+	color: var(--odhin-color-font-2) !important;
+}
+.odhin-attachments-label-special{
+	color: var(--odhin-color-font-2) !important;
+}
+.odhin-attachment-body img,
+.odhin-attachment-body video {
+	border: var(--odhin-color-others-borders) 1px solid;
+}
+.chart-status-passed {
+	color: var(--odhin-passed-status-color);
+	border-left: var(--odhin-passed-status-color) 10px solid;
+	background-color: var(--odhin-light-passed-status-color) !important;
+}
+.chart-status-passed-info {
+	color: var(--odhin-passed-status-color);
+	background-color: var(--odhin-light-passed-status-color) !important;
+}
+.chart-status-failed {
+	color: var(--odhin-failed-status-color);
+	border-left: var(--odhin-failed-status-color) 10px solid;
+	background-color: var(--odhin-light-failed-status-color) !important;
+}
+.chart-status-failed-info {
+	color: var(--odhin-failed-status-color);
+	background-color: var(--odhin-light-failed-status-color) !important;
+}
+.chart-status-timedOut {
+	color: var(--odhin-timedOut-status-color);
+	border-left: var(--odhin-timedOut-status-color) 10px solid;
+	background-color: var(--odhin-light-timedOut-status-color) !important;
+}
+.chart-status-timedOut-info {
+	color: var(--odhin-timedOut-status-color);
+	background-color: var(--odhin-light-timedOut-status-color) !important;
+}
+.chart-status-skipped {
+	color: var(--odhin-skipped-status-color);
+	border-left: var(--odhin-skipped-status-color) 10px solid;
+	background-color: var(--odhin-light-skipped-status-color) !important;
+}
+.chart-status-skipped-info {
+	color: var(--odhin-skipped-status-color);
+	background-color: var(--odhin-light-skipped-status-color) !important;
+}
+.chart-status-interrupted {
+	color: var(--odhin-interrupted-status-color);
+	border-left: var(--odhin-interrupted-status-color) 10px solid;
+	background-color: var(--odhin-light-interrupted-status-color) !important;
+}
+.chart-status-interrupted-info {
+	color: var(--odhin-interrupted-status-color);
+	background-color: var(--odhin-light-interrupted-status-color) !important;
+}
+.result-header {
+	background-color: var(--odhin-color-background-1);
+	color: var(--odhin-color-font-1);
+}
+.result-tab-header {
+	background-color: var(--odhin-color-tab-background);
+	color: var(--odhin-color-tab-font);
+}
+.close-btn {
+	background-color: var(--odhin-color-close-button-background);
+	color: var(--odhin-color-close-button-font);
+	border: 1px solid var(--odhin-color-close-button-border);
+}
+.close-btn:hover {
+	background-color: var(--odhin-color-close-button-hover-background);
+	color: var(--odhin-color-close-button-hover-font);
+	border: 1px solid var(--odhin-color-close-button-hover-border);
+}
+.download-btn {
+	background-color: var(--odhin-color-download-button-background);
+	color: var(--odhin-color-download-button-font);
+	border: 1px solid var(--odhin-color-download-button-border);
+}
+.download-btn:hover {
+	background-color: var(--odhin-color-download-button-hover-background) !important;
+	color: var(--odhin-color-download-button-hover-font) !important;
+	border: 1px solid var(--odhin-color-download-button-hover-border) !important;
+}
+.label-status-passed {
+	background-color: var(--odhin-light-passed-status-color) !important;
+	color: var(--odhin-passed-status-color) !important;
+	border: var(--odhin-passed-status-color) 1px solid !important;
+}
+.label-status-failed {
+	background-color: var(--odhin-light-failed-status-color) !important;
+	color: var(--odhin-failed-status-color) !important;
+	border: var(--odhin-failed-status-color) 1px solid !important;
+}
+.label-status-timedOut {
+	background-color: var(--odhin-light-timedOut-status-color) !important;
+	color: var(--odhin-timedOut-status-color) !important;
+	border: var(--odhin-timedOut-status-color) 1px solid !important;
+}
+.label-status-skipped {
+	background-color: var(--odhin-light-skipped-status-color) !important;
+	color: var(--odhin-skipped-status-color) !important;
+	border: var(--odhin-skipped-status-color) 1px solid !important;
+}
+.label-status-interrupted {
+	background-color: var(--odhin-light-interrupted-status-color) !important;
+	color: var(--odhin-interrupted-status-color) !important;
+	border: var(--odhin-interrupted-status-color) 1px solid !important;
+}
+.result-status-passed {
+	background-color: var(--odhin-light-passed-status-color) !important;
+	color: var(--odhin-passed-status-color) !important;
+}
+tr.row-result-status-passed:hover{
+	border-left: 5px solid var(--odhin-passed-status-color) !important;
+	border-right: 5px solid var(--odhin-passed-status-color) !important;
+}
+.result-status-failed {
+	background-color: var(--odhin-light-failed-status-color) !important;
+	color: var(--odhin-failed-status-color) !important;
+}
+tr.row-result-status-failed:hover{
+	border-left: 5px solid var(--odhin-failed-status-color) !important;
+	border-right: 5px solid var(--odhin-failed-status-color) !important;
+}
+.result-status-timedOut {
+	background-color: var(--odhin-light-timedOut-status-color) !important;
+	color: var(--odhin-timedOut-status-color) !important;
+}
+tr.row-result-status-timedOut:hover{
+	border-left: 5px solid var(--odhin-timedOut-status-color) !important;
+	border-right: 5px solid var(--odhin-timedOut-status-color) !important;
+}
+.result-status-skipped {
+	background-color: var(--odhin-light-skipped-status-color) !important;
+	color: var(--odhin-skipped-status-color) !important;
+}
+tr.row-result-status-skipped:hover{
+	border-left: 5px solid var(--odhin-skipped-status-color) !important;
+	border-right: 5px solid var(--odhin-skipped-status-color) !important;
+}
+.result-status-interrupted {
+	background-color: var(--odhin-light-interrupted-status-color) !important;
+	color: var(--odhin-interrupted-status-color) !important;
+}
+tr.row-result-status-interrupted:hover{
+	border-left: 5px solid var(--odhin-interrupted-status-color) !important;
+	border-right: 5px solid var(--odhin-interrupted-status-color) !important;
+}
+.step-ok {
+	color: var(--odhin-passed-status-color) !important;
+}
+.step-error {
+	color: var(--odhin-failed-status-color) !important;
+}
+
+
+.step-ok-hover:hover,
+.step-ok-hover:hover > *{
+	color: var(--odhin-passed-status-color) !important;
+	background-color: var(--odhin-light-passed-status-color) !important;
+}
+.step-error-hover:hover,
+.step-error-hover:hover > *{
+	color: var(--odhin-failed-status-color) !important;
+	background-color: var(--odhin-light-failed-status-color) !important;
+}
+
+.pre-line-number {
+	color: var(--odhin-failed-status-color);
+}
+.pre-line-info {
+	color: var(--odhin-passed-status-color);
+}
+
+.tableFixHead thead th {
+	color: var(--odhin-color-font-2);
+	background-color: var(--odhin-color-background-2);
+}
+
+.tr-border-bottom,
+.table-sm tbody tr {
+	border-color: var(--odhin-color-others-borders);
+}
+
+.odhin-table-no-scroll table tbody tr:last-child,
+.testcase-run-info-table tbody tr:last-child {
+	border-bottom-color: transparent !important;
+}
+table.dataTable tr,
+table.dataTable thead {
+	border-top: 1px solid var(--odhin-color-main-tests-table-border) !important;
+	border-bottom: 1px solid var(--odhin-color-main-tests-table-border) !important;
+}
+table.dataTable tbody tr:first-child {
+	border-top: 1px solid var(--odhin-color-main-tests-table-border) !important;
+}
+
+.info-box-header{
+	color: var(--odhin-color-dashboard-card-title-font);
+	background-color: var(--odhin-color-dashboard-card-title-background);
+	border-bottom: 1px solid var(--odhin-color-dashboard-card-title-bottom-border);
+}
+
+.pre{
+	background-color: #2d2d2d;
+}
+
+pre{
+    color: var(--odhin-color-font-1);
+}
+
+
+/* 
+Bootstrap
+*/
+.accordion-button:not(.collapsed) {
+	color: var(--odhin-color-font-2);
+	background-color: transparent !important;
+}
+.accordion-button.collapsed{
+	color: var(--odhin-color-font-2);
+	background-color: transparent !important;
+}
+
+.accordion-steps:not(.collapsed) {
+	color: var(--odhin-color-font-2) !important;
+}
+.accordion-steps.collapsed {
+	color: var(--odhin-color-font-2) !important;
+}
+
+.accordion-steps,
+.accordion-steps-no-link{
+	color: var(--odhin-color-font-2) !important;
+	background-color: transparent !important;
+}
+
+.modal-content {
+	border: 1px solid var(--odhin-color-background-1);
+	background-color: var(--odhin-color-background-1);
+}
+.accordion-item {
+	background-color: var(--odhin-color-background-2) !important;
+	color: var(--odhin-color-font-2) !important;
+}
+
+/* DataTable */
+#test-list-table,
+.dataTables_info,
+.dataTables_length,
+.dataTables_paginate,
+.dataTables_filter{
+	color: var(--odhin-color-datatable-font) !important;
+}
+.dataTables_length select {
+	background-color: var(--odhin-color-datatable-background) !important;
+	color: var(--odhin-color-datatable-font) !important;
+}
+.dataTables_filter input {
+	background-color: var(--odhin-color-datatable-background) !important;
+	color: var(--odhin-color-datatable-font) !important;
+}
+
+/* Style the tab */
+.tab button {
+	background-color: var(--odhin-color-tab-background);
+	color: var(--odhin-color-tab-font)
+}
+.tab button:hover,
+.tab button.active {
+	background-color: var(--odhin-color-tab-hover-background);
+	color: var(--odhin-color-tab-hover-font);
+}
+.tabcontent,
+.result-tabcontent {
+	background-color: var(--odhin-color-background-2);
+}

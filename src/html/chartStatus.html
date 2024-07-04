@@ -1,0 +1,87 @@
+<div class="mt-3 mb-3 odhin-thin-border">
+	<div class="info-box-header">Global Summary</div>
+	<div class="odhin-table">
+		<div class="table-responsive">
+			<table class="table table-sm table-borderless mb-0">
+				<tr>
+					<td>
+						<table class="table table-sm table-borderless mb-0">
+							<tr>
+								<th class="odhin-text">Chart</th>
+							</tr>
+							<tr>
+								<td rowspan="5" class="chart value">
+									<div class="position-relative">
+										<div
+											class="position-absolute top-50 start-50 w-100 translate-middle odhin-text ps-2 fs-5"
+										>
+											{{.TotalTests}}
+										</div>
+										<canvas
+											id="{{.ChartId}}"
+											style="
+												display: block;
+												box-sizing: border-box;
+												height: 160px;
+												width: 160px;
+												margin: 0px auto;
+											"
+											width="160"
+											height="160"
+										></canvas>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table class="table table-sm mb-0">
+							<tr>
+								<th class="odhin-text">Status</th>
+								<th class="odhin-text">Tests</th>
+								<th class="odhin-text">Percentage</th>
+							</tr>
+							<tr>
+								<td class="chart-status-passed fs-6">Passed</td>
+								<td class="chart-status-passed-info">{{.TestPassedValue}}</td>
+								<td class="chart-status-passed-info fst-italic">
+									{{.TestPassedPercentage}}%
+								</td>
+							</tr>
+							<tr>
+								<td class="chart-status-failed fs-6">Failed</td>
+								<td class="chart-status-failed-info">{{.TestFailedValue}}</td>
+								<td class="chart-status-failed-info fst-italic">
+									{{.TestFailedPercentage}}%
+								</td>
+							</tr>
+							<tr>
+								<td class="chart-status-timedOut fs-6">Timed Out</td>
+								<td class="chart-status-timedOut-info">{{.TestTimedOutValue}}</td>
+								<td class="chart-status-timedOut-info fst-italic">
+									{{.TestTimedOutPercentage}}%
+								</td>
+							</tr>
+							<tr>
+								<td class="chart-status-skipped fs-6">Skipped</td>
+								<td class="chart-status-skipped-info">{{.TestSkippedValue}}</td>
+								<td class="chart-status-skipped-info fst-italic">
+									{{.TestSkippedPercentage}}%
+								</td>
+							</tr>
+							<tr>
+								<td class="chart-status-interrupted">Interrupted</td>
+								<td class="chart-status-interrupted-info">
+									{{.TestInterruptedValue}}
+								</td>
+								<td class="chart-status-interrupted-info fst-italic">
+									{{.TestInterruptedPercentage}}%
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

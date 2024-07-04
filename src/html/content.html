@@ -1,0 +1,30 @@
+<div>
+    <div class="table-responsive">
+        <table id="test-list-table" class="table table-sm table-hover">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>File</th>
+                    <th>Browser</th>
+                    <th>Duration</th>
+                    {{.RetryColumn}}
+                </tr>
+            </thead>
+            <tbody>
+                {{.TestCases}}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>File</th>
+                    <th>Browser</th>
+                    <th>Duration</th>
+                    {{.RetryColumn}}
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    {{.TestCasesDetails}}
+</div>

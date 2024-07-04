@@ -1,0 +1,20 @@
+<div class="mt-3 mb-3 odhin-thin-border dashboard-block">
+	<div class="info-box-header">{{.SummaryTitleName}}</div>
+	<div class="odhin-table-no-scroll">
+		<div class="table-responsive">
+			<table class="table table-sm mb-0">
+				<tr>
+					<th class="odhin-text">{{.SummaryColumnName}}</th>
+					<th class="odhin-text">Tests</th>
+					<th class="odhin-text">Execution Time</th>
+					<th class="odhin-text">Passed</th>
+					<th class="odhin-text">Failed</th>
+					<th class="odhin-text">Timed Out</th>
+					<th class="odhin-text">Skipped</th>
+					<th class="odhin-text">Interrupted</th>
+				</tr>
+				{{.Data}}
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,53 @@
+:root {
+	--odhin-color-background-1: #424242;
+	--odhin-color-background-2: #6d6d6d;
+	--odhin-color-font-1: #f3f3f3;
+	--odhin-color-font-2: #f3f3f3;
+
+	--odhin-color-tab-background: #424242; /* Tab Background Color */
+	--odhin-color-tab-font: #f3f3f3; /* Tab Font Color */
+	--odhin-color-tab-hover-background: #6d6d6d; /* Tab Hover Background Color */
+	--odhin-color-tab-hover-font: #f3f3f3; /* Tab Hover Font Color */
+
+	--odhin-color-dashboard-card-title-background: #424242; /* Dashboard Card Title Background Color */
+	--odhin-color-dashboard-card-title-font: #f3f3f3; /* Dashboard Card Title Font Color */
+	--odhin-color-dashboard-card-title-bottom-border: #424242; /* Dashboard Card Title Bottom Border Color */
+
+	--odhin-color-datatable-background: #6d6d6d; /* Tab Background Color */
+	--odhin-color-datatable-font: #f3f3f3; /* Tab Font Color */
+
+	--odhin-color-download-button-background: #424242; /* Button Background Color */
+	--odhin-color-download-button-font: #f3f3f3; /* Button Font Color */
+	--odhin-color-download-button-border: #424242; /* Button Border Color */
+	--odhin-color-download-button-hover-background: #424242; /* Button Background Color */
+	--odhin-color-download-button-hover-font: #55bb67; /* Button Font Color */
+	--odhin-color-download-button-hover-border: #55bb67; /* Button Border Color */
+
+	--odhin-color-close-button-background: #424242; /* Button Background Color */
+	--odhin-color-close-button-font: #f3f3f3; /* Button Font Color */
+	--odhin-color-close-button-border: #424242; /* Button Border Color */
+	--odhin-color-close-button-hover-background: #424242; /* Button Background Color */
+	--odhin-color-close-button-hover-font: #55bb67; /* Button Font Color */
+	--odhin-color-close-button-hover-border: #55bb67; /* Button Border Color */
+
+	--odhin-color-main-tests-table-border: #424242; /* Main Tests Table Border Color */
+	--odhin-color-others-borders: #424242; /* Others Borders Color */
+
+	--odhin-color-scrollbar-thumb: #55bb67; /* Scrollbar Thumb Color */
+	--odhin-color-scrollbar-track: #6d6d6d; /* Scrollbar Track Color */
+	
+	--odhin-color-selection-background: #55bb67; /* Selection Background Color */
+	--odhin-color-selection-font: #6d6d6d; /* Selection Font Color */
+
+	--odhin-passed-status-color: #2e7d31;
+	--odhin-failed-status-color: #c62828;
+	--odhin-timedOut-status-color: #b99400;
+	--odhin-skipped-status-color: #e76400;
+	--odhin-interrupted-status-color: #01579b;
+
+	--odhin-light-passed-status-color: #c2d4c2;
+	--odhin-light-failed-status-color: #ddc9c9;
+	--odhin-light-timedOut-status-color: #cec9b9;
+	--odhin-light-skipped-status-color: #c9bdb2;
+	--odhin-light-interrupted-status-color: #aebac4;
+}
