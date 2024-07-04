@@ -9,7 +9,9 @@
   ],
   "scripts": {
     "build": "tsc",
-    "clean-install": "rm -rf node_modules && rm packake-lock.json && npm i"
+    "clean-install": "rm -rf node_modules && rm packake-lock.json && npm i",
+    "test": "playwright test --headed",
+    "test:ui": "playwright test --ui"
   },
   "repository": {
     "type": "git",
