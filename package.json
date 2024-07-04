@@ -47,7 +47,7 @@
     "js-base64-file": "^2.0.3",
     "lodash": "^4.17.21",
     "node-html-to-image": "^3.3.0",
-    "open": "^9.1.0",
+    "open": "^10.1.0",
     "picocolors": "^1.0.0",
     "portfinder": "^1.0.32",
     "prismjs": "^1.29.0",
