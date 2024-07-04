@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "clean-install": "rm -rf "
+    "clean-install": "rm -rf node_modules && rm packake-lock.json && npm i"
   },
   "repository": {
     "type": "git",
